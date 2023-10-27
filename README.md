@@ -1,10 +1,10 @@
 # Title
 
-# About
+### About
 
-#Rules/Instructions
+### Rules/Instructions
 
 ## Thankl You
 
-# Begin Here "addlink"
+## Begin Here "addlink"
 
