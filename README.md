@@ -4,7 +4,7 @@
 
 ### Rules/Instructions
 
-## Thankl You
+## Thank You
 
 ## Begin Here "addlink"
 
