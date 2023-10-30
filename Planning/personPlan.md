@@ -9,8 +9,7 @@
 ### Create a CSS file to style:
     - Checkers board
     - Pieces
-    - Additional elements
-	
+    - Additional elements	
 
 ### Render the game board: 
     - Use JavaScript to dynamically generate the game board 
