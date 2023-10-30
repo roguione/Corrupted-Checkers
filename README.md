@@ -1,7 +1,7 @@
-# OG Checkers BBG
+# Checkers BBG
 
 ## About
-Checkers is one of the oldest games we know. The earliest board found dates back to 3,000 BCE, making it around 5,000 years old! The fact that people still play checkers is a testament to just how addictive, enjoyable, and easy the game is to learn and play.
+Checkers is one of the oldest games we know. The earliest board found dates back to 3,000 BCE, making it around 5,000 years old! The fact that people still play checkers is a testament to just how addictive, enjoyable, and easy the game is to learn and play. In this game of checkers the rules are same. I have only changed the styling around.  
 
 ## Rules/Instructions  
 
