@@ -1,4 +1,29 @@
+/* Center the grid container on the page */
 body {
-    background-color: rgb(104, 70, 30);
-}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ab6e12; /* Set a background color for the page */
+  }
+  
+  /* Define the grid container */
+  #grid-container {
+    width: 700px; /* Adjust the size */
+    height: 700px; /* Adjust the size */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 2px solid #0e0e0e; /* Add a border to the grid container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Add a subtle shadow for depth */
+    background-color: #050505; /* Set a background color for the grid */
+  }
+  
+  /* Define the cell styles */
+  .cell {
+    border: 1px solid #181378; /* Add a border to the cells */
+  }
+  
+  /* Additional styling for cells if needed */
+  
