@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <script defer src="js/game.js"></script>
-
+    <title>OG Checkers BBG</title>
+    <link rel="stylesheet" href="/css/main.css"> <!-- This is the link to your CSS file -->
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
+    <h1>OG Checkers</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <button id="startButton">Start Game</button>
+    <script src="js/game.js"></script>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const startButton = document.getElementById('startButton');
+
+        // This is a placeholder for your game initialization function.
+        function startGame() {
+            // You can start building your game logic here.
+        }
+
+        startButton.addEventListener('click', () => {
+            startGame();
+            startButton.disabled = true;
+        });
+    </script>
+
     <img src="imgs/checker_white.png" alt="checker_white">
     <img src="imgs/checker_black.png" alt="checker_black">
     <img src="imgs/checker_white.png" alt="checker_white">
     <img src="imgs/checker_white_king.png" alt="checker_white_king">
     <img src="imgs/checker_black_king.png" alt="checker_black_king">
     <img src="imgs/checkerBoard.png" alt="checkerBoard.png">
-
-    
 </body>
 </html>
