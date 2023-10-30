@@ -3,16 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>OG Checkers BBG</title>
     <link rel="stylesheet" href="/css/main.css"> 
-    <style>
-        canvas {
-            border: 2px solid black;
-        }
-    </style>
 </head>
 <body>
-    <h1>OG Checkers</h1>
+    <main>
+        <div></div>
+        <table>
+            <tr>
+                <td class="noPiece"></td>
+                <td>td class="white_piece" id="0"></td>
+                <td>td class="noPiece"</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
     <canvas id="gameCanvas" width="800" height="600"></canvas>
     <button id="startButton">Start Game</button>
     <script src="js/game.js"></script>
@@ -32,12 +114,5 @@
             startButton.disabled = true;
         });
     </script>
-
-    <img src="imgs/checker_white.png" alt="checker_white">
-    <img src="imgs/checker_black.png" alt="checker_black">
-    <img src="imgs/checker_white.png" alt="checker_white">
-    <img src="imgs/checker_white_king.png" alt="checker_white_king">
-    <img src="imgs/checker_black_king.png" alt="checker_black_king">
-    <img src="imgs/checkerBoard.png" alt="checkerBoard.png">
 </body>
 </html>
