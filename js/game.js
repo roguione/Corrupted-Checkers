@@ -4,7 +4,7 @@ console.log('javascript is a go');
 let grid;
 
 // DOM elements
-const board = document.querySelector('#grid -container');
+const board = document.querySelector('#grid-container');
 
 // util/ help function
 function makeBoard(){
@@ -23,7 +23,7 @@ function makeBoard(){
 init();
 
 function init(){
-    grid = new Array(8).fill().map(() => new Array(8).fill('0');
+    grid = new Array(8).fill().map(() => new Array(8).fill('0'));
 
     makeBoard();
 
