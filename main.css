@@ -6,7 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #ab6e12; /* Set a background color for the page */
+  background-color: #28073e; /* Set a background color for the page */
   padding: 20px;
 }
 
@@ -17,98 +17,106 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  border: 2px solid #641678; /* Add a border to the grid container */
-  box-shadow: 0 0 20px rgb(55, 4, 73); /* Add a subtle shadow for depth */
-  background-color: #0f0f0f; /* Set a background color for the grid */
+  border: 2px solid #135d84; /* Add a border to the grid container */
+  box-shadow: 0 0 20px rgb(255, 255, 150); /* Add a subtle shadow for depth */
+  background-color: #070707; /* Set a background color for the grid */
   position: relative; /* Position relative for child elements */
 }
 
 /* Define the cell styles */
 .cell {
-  border: 1px solid #5f2e79; /* Add a border to the cells */
+  border: 1px solid #234247; /* Add a border to the cells */
 }
 
-/* Styling for alternate light green cells */
+/* Styling for alternate cells */
 .light-green {
-  background-color: rgb(71, 155, 71); /* Set the background color for light green cells */
+  background-color: rgb(56, 3, 30); /* Set the background color for light green cells */
 }
 
 /* Styling for the score layout */
-.score {
+.player-score-box {
   display: flex;
-  justify-content: space-between;
-  padding: 2px; /* Add some padding to separate scores from the grid */
-  width: 50%; /* Full width */
-  background-color: #722b0a; /* Set a background color for the score layout */
+  justify-content: center;
+  width: 120%; /* Adjust the width based on your needs */
+  background-color: #a95331; /* Set a background color for the score layout */
+  position: center; /* Set positioning */
+  top: 0; /* Position at the top */
+  right: 0; /* Position to the right */
+  z-index: 10; /* score box appears above other elements */
 }
 
 /* Styling for individual scores */
-.score #player-one-score,
-.score #player-two-score {
-  padding: 8px; /* Add padding to individual scores */
-  border: 1px solid #000; /* Add a border for clarity */
-  width: 50%; /* Set a fixed width for scores */
+.player-score-box #player-one-score,
+.player-score-box #player-two-score {
+  padding: 10px; /* Add padding to individual scores */
+  border: 2px solid #a29b14; /* Add a border for clarity */
+  flex: 9;
   text-align: center; /* Center the text inside scores */
 }
 
 /* Styling for checker 1 (Player 1) */
 .checker.player1 {
-  background-color: #261e91; /* Set color for player 1's checkers */
+  background-color: #5c159e; /* Set color for player 1's checkers */
 }
 
 /* Styling for checker 2 (Player 2) */
 .checker.player2 {
-  background-color: #cdcd56; /* Set color for player 2's checkers */
+  background-color: #676711; /* Set color for player 2's checkers */
 }
 
 /* Styling for both checker colors */
 .checker {
-  width: 60%;
-  height: 60%;
+  width: 60%; 
+  height: 60%; 
   border-radius: 50%; /* Makes the checker pieces round */
   margin: auto; /* Center the checker within the cell */
+  margin-top: 16px; /* Center the checker */
   display: flex; /* Center the checker */
   justify-content: center; /* Align the checker */
   align-items: center; /* Align the checker */
-  margin-top: 13px; /* Add some spacing for the checker */
+  box-shadow: whitesmoke;
 }
 
 .kinged {
-    background: gold;
+  background: gold;
 }
 
-#start-button {
+#start-button, #new-game-button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1e6c20;
   color: rgb(20, 17, 17);
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px;  /* Some margin to separate it from the grid container or any other element */
-  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+
+/* Styling for the start button */
+#start-button {
+  background-color: #1e6c20;
+  margin-bottom: 40px; /* margin to separate it from the grid container or any other element */
+  margin-top: 40px;
 }
 
 #start-button:hover {
   background-color: #1b521e;
 }
 
+/* Styling for the new game button */
 #new-game-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
   background-color: #0e5d79;
-  color: rgb(20, 17, 17);
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;  /* Some margin to separate it from the grid container or any other element */
-  margin-bottom: 10px;
+  margin-bottom: 90px; /* margin to separate it from the grid container or any other element */
+  margin-top: 40px; /* Some margin to separate it */
 }
 
 #new-game-button:hover {
   background-color: #083541;
+}
+
+#message {
+    color: white; /* Set the text color to white */
+    font-size: 20px; /* adjust the size to your liking */
+    margin-bottom: 40px; 
 }
