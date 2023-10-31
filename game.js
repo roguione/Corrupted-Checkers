@@ -26,7 +26,7 @@ function initializeBoard() {
     for (let i = 0; i < 8; i++) {
         grid[i] = [];
         for (let j = 0; j < 8; j++) {
-            // Assign checkers for OOOG
+            // Assign checkers for OG
             if ((i + j) % 2 !== 0 && i < 3) {
                 grid[i][j] = 2;
             } 
@@ -148,7 +148,7 @@ function cellClick(e) {
 
 // A basic AI function for the computer to randomly select a valid move.....intnet find
 function computerPlay() {
-    console.log("OG OOOG's turn");
+    console.log("OG's turn");
 
     let validMoves = [];
 
@@ -298,10 +298,18 @@ startButton.addEventListener('click', () => {
     messageDisplay.textContent = 'Player 1\'s turn';
 });
 
+
 // Handle the clicking of the new game button to reset the game state
 newGameButton.addEventListener('click', () => {
-    console.log("New Dual");
+    console.log("New Duel");
     resetGame();
+});
+
+// If you have other game logic, you can continue with that, for example:
+newGameButton.addEventListener('click', () => {
+    // Reset game logic here
+    messageDisplay.textContent = 'New game! Player 1\'s turn';
+    // And any other logic to reset the game board
 });
 
 // 6. Initialization
