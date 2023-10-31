@@ -1,4 +1,4 @@
-/* // actual board 9x8
+/* // actual board 8x8
 // 1 =  empty square
 // 2 = player1 square "white checker"
 // 0 = player2 square "black checker"
