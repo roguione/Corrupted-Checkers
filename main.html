@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Checkers</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-    <div id="grid-container">
-      <!-- The board will be generated here -->
+</head>
+
+<body>
+    <div class="score">
+        <div id="player-one-score">Player One: 0</div>
+        <div id="player-two-score">Player Two: 0</div>
     </div>
-    <script defer src="game.js"></script>
-  </body>
+    <div id="message"></div> <!-- Added message div here -->
+    <button id="start-button">Start Game</button>
+    <div id="grid-container">
+        <!-- The board will be generated here -->
+    </div>
+    <button id="new-game-button">New Game</button>
+    <script defer src="main.js"></script>
+</body>
+
 </html>
