@@ -1,7 +1,9 @@
 ## Constants:
 - #### Get DOM elements for the game board, buttons, and message display.
-  
+    -The DOM elements associated with the game board, start button, message display, and new game button are fetched and stored in constants
+
 ## Variables:
+- #### Variables representing the game's state are set up
 - #### Define primary game state variables.
   
 ## Board Functions:
@@ -11,6 +13,9 @@
 - #### createChecker(): Generates a checker piece for a specified player
 - #### heckerClick(): Logic for when a checker piece is clicked on
 - #### cellClick(): Logic for when a cell on the board is clicked
+
+## Gameplay Logic 
+
 - #### computerPlay(): A basic AI function for the computer to randomly select a valid move
 - #### getValidMoves(): Determine the valid moves a checker piece can make from a given position
 - #### moveChecker(): Execute the movement of a checker piece on the game board
