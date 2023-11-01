@@ -49,19 +49,19 @@ body {
 .player-score-box #player-one-score,
 .player-score-box #player-two-score {
   padding: 10px; /* Add padding to individual scores */
-  border: 2px solid #a29b14; /* Add a border for clarity */
+  border: 2px solid #111111; /* Add a border for clarity */
   flex: 9;
   text-align: center; /* Center the text inside scores */
 }
 
 /* Styling for checker 1 (Player 1) */
 .checker.player1 {
-  background-color: #5c159e; /* Set color for player 1's checkers */
+  background-color: #370862; /* Set color for player 1's checkers */
 }
 
 /* Styling for checker 2 (Player 2) */
 .checker.player2 {
-  background-color: #676711; /* Set color for player 2's checkers */
+  background-color: #626013; /* Set color for player 2's checkers */
 }
 
 /* Styling for both checker colors */
@@ -74,7 +74,7 @@ body {
   display: flex; /* Center the checker */
   justify-content: center; /* Align the checker */
   align-items: center; /* Align the checker */
-  box-shadow: whitesmoke;
+  box-shadow: 0 0 10px whitesmoke;
 }
 
 .kinged {
