@@ -12,8 +12,8 @@ body {
 
 /* Define the grid container */
 #grid-container {
-  width: 650px; /* Adjust the size */
-  height: 650px; /* Adjust the size */
+  width: 550px; /* Adjust the size */
+  height: 550px; /* Adjust the size */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
