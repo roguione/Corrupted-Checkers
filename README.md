@@ -42,5 +42,6 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 
 ## Thank You
 
-## Begin Here "addlink"
+## [Entre'] (https://roguione.github.io/JS-Game-Proj/main.html)
+
 
