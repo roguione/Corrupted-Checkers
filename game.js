@@ -287,7 +287,6 @@ startButton.addEventListener('click', function () {
     resetGame();
     gameStarted = true;
 });
-startButton.addEventListener('click', resetGame);
 
 // 5. Initial Setup
 initializeBoard();
