@@ -25,6 +25,7 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 - #### Simply be the First one to make it to other side of board and get kinged wins
 - #### OG OOOG can be tricky and will take your checkers, blocking is best best strategy
 - #### A crucial point to note is that the game's computer AI is very basic. It doesn't optimize its moves;instead, it chooses one randomly from the available valid moves.
+- ##### Works best with Google Chrome, open in new tab
                             
 # Play Here ## [Entre'](https://roguione.github.io/JS-Game-Proj/main.html) ## 
 
