@@ -34,8 +34,8 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 
 - Overall, you need to pay close attention to win at Checkers. Watch for any multi-jumps, pay close attention to your player's kings, and never leave yourself open to captures unless it will result in your opponent losing at least one piece down the road
 
-## Thank You
-
+### Thank You
+#### Open link in new tab
 ## [Entre'](https://roguione.github.io/JS-Game-Proj/main.html)
 
 
