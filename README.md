@@ -24,9 +24,23 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 
 - ### Simply be the First one to make it to other side of board and get kinged wins
 - ### OG OOOG can be tricky and will take your checkers, blocking is best best strategy
-- #### A crucial point to note is that the game's computer AI is very basic. It doesn't optimize its moves; instead, it chooses one randomly from the available valid moves.  
+- #### A crucial point to note is that the game's computer AI is very basic. It doesn't optimize its moves;instead, it chooses one randomly from the available valid moves.
+
+##### ['Key Features in Logic'](https://github.com/roguione/JS-Game-Proj/blob/main/Planning/personPlan.md)
+##### ['Themes Used'](https://github.com/roguione/JS-Game-Proj/tree/main/imgs)
 
 ### Thank You
+- S.Squirr3l's
+
+###### REF: 
+  - ['mdn'](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+  - ['W3 Schools'](https://www.w3schools.com/graphics/default.asp)
+  - ['GameDesigning'](https://www.gamedesigning.org/)
+  - ['NIEMET'](https://dev.to/niemet0502/how-i-built-a-checkers-game-with-javascript-2hn5)
+    - ['NIEMET GitHub'](https://github.com/niemet0502/checkers-game-js)
+  - ['RB'](https://github.com/RyanBranco/Checkers)
+  - ['J.S(sandbox)GE'](https://codesandbox.io/s/grid-demo-msjfyh)
+ 
 #### Open link in new tab
 ## [Entre'](https://roguione.github.io/JS-Game-Proj/main.html)
 
