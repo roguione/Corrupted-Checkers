@@ -26,6 +26,8 @@ h1 {
 
 /* Define the grid container */
 #grid-container {
+  position: relative;
+  transform-origin: top-left;
   width: 550px; /* Adjust the size */
   height: 550px; /* Adjust the size */
   display: grid;
@@ -55,7 +57,7 @@ h1 {
   width: 100%; /* Adjust the width based on your needs */
   background-color: #11a3b7; /* Set a background color for the score layout */
   position: center /* Set positioning */
-  top : 10px; /* Position at the top */
+  top: 10px; /* Position at the top */
   right: 0; /* Position to the right */
 }
 
