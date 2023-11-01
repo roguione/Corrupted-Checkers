@@ -40,7 +40,7 @@ h1 {
 
 /* Define the cell styles */
 .cell {
-  border: 1px solid #234247; /* Add a border to the cells */
+  border: 1px solid rgb(7, 208, 234); /* Add a border to the cells */
 }
 
 /* Styling for alternate cells */
@@ -84,11 +84,11 @@ h1 {
   height: 60%; 
   border-radius: 50%; /* Makes the checker pieces round */
   margin: auto; /* Center the checker within the cell */
-  margin-top: 16px; /* Center the checker */
+  margin-top: 13px; /* Center the checker */
   display: flex; /* Center the checker */
   justify-content: center; /* Align the checker */
   align-items: center; /* Align the checker */
-  box-shadow: 0 0 10px whitesmoke;
+  box-shadow: 0 0 10px rgb(9, 255, 235);
 }
 
 .kinged {
