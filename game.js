@@ -5,7 +5,7 @@ const gridContainer = document.querySelector('#grid-container');
 const startButton = document.querySelector('#start-button');
 const messageDisplay = document.querySelector('#message');
 const newGameButton = document.querySelector('#new-game-button');
-const scoreBoxPlayer1 = document.querySelector('#score-player1');
+const scoreBoxPlayer1 = document.querySelector('#score-player-one');
 const scoreBoxComputer = document.querySelector('#score-computer');
 
 // 2. Variables
@@ -232,6 +232,8 @@ function moveChecker(fromRow, fromCol, toRow, toCol) {
 
 // Proclaims a player as the winner
 function declareWinner(player, isKing = false) {
+    scores[player]++;
+    updateScores();
     if (isKing) {
         messageDisplay.textContent = `C-BBG King! Player ${player} wins!`;
     }
@@ -252,8 +254,7 @@ function resetGame() {
     gameStarted = false;
     messageDisplay.textContent = '';
     gridContainer.innerHTML = '';
-    // scoreBoxPlayer1.textContent = '';
-    // scoreBoxComputer.textContent = '';
+  
     initializeBoard();
     createBoard();
 }
@@ -286,7 +287,7 @@ startButton.addEventListener('click', function () {
     resetGame();
     gameStarted = true;
 });
-newGameButton.addEventListener('click', resetGame);
+startButton.addEventListener('click', resetGame);
 
 // 5. Initial Setup
 initializeBoard();

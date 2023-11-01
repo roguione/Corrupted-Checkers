@@ -20,8 +20,8 @@ h1 {
     font-size: 2rem;
     color: #1dcece;
     text-shadow: 2px 2px 10px rgba(250, 247, 247, 0.7);
-    margin-bottom: 0px;
-    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-top: 27px;
 }
 
 /* Define the grid container */
@@ -53,10 +53,10 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%; /* Adjust the width based on your needs */
-  background-color: #11a3b7; /* Set a background color for the score layout */
-  position: center /* Set positioning */
-  top: 10px; /* Position at the top */
-  right: 0; /* Position to the right */
+  background-color: #30d1e7; /* Set a background color for the score layout */
+  position: relative; /* Set positioning */
+  box-shadow: 0 15px 15px rgba(7, 208, 234,);
+  z-index: 10;
 }
 
 /* Styling for individual scores */
@@ -105,14 +105,14 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  background-color: #118d66; /* This is shared, but can be overridden by specific selectors later if needed */
+  box-shadow: 4 4 50px rgb(252, 251, 251); /* Same as above */
 }
 
-/* Styling for the start button */
+/* Specific styling for the start button */
 #start-button {
-  background-color: #118d66;
-  margin-bottom: 40px; /* margin to separate it from the grid container or any other element */
-  margin-top: 40px;
-  box-shadow: 4 4 50px rgb(252, 251, 251);
+  margin-top: 30px;
+  margin-bottom:10px;
 }
 
 #start-button:hover {
