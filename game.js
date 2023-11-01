@@ -305,12 +305,12 @@ newGameButton.addEventListener('click', () => {
     resetGame();
 });
 
-// If you have other game logic, you can continue with that, for example:
+/* // you have other game logic, you can continue with that
 newGameButton.addEventListener('click', () => {
     // Reset game logic here
     messageDisplay.textContent = 'New game! Player 1\'s turn';
     // And any other logic to reset the game board
-});
+}); */
 
 // 6. Initialization
 
