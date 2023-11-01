@@ -18,21 +18,11 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 - Capture opponents pieces by jumping them
   
 - Pieces can move forward or diagonally unless Kinged
-  - If one of your pieces makes it to the other side of the board that piece becomes a king
-
-- The king can move forward and backward diagonally on the board. This is a huge advantage, and players should try as hard as they can to crown their pieces
+  - If one of your pieces makes it to the other side of the board that piece becomes a king to win
   
-## How To Win Checkers
+## How To Win Corrupted Checkers BBG
 
-- One of the most popular strategies is controlling the center. Your pieces are safer at the edges of the board since they can't be captured there, but this also lowers your chances of making a capture
-
-- You should always focus on getting at least one piece to become a king. The opponent's side of the board is a good place to be and opens up a lot of great move opportunities. Jump pieces when you can, but always have a piece going up the board to become king
-
-- Try moving your checkers in groups of two or three to best protect them. A checker backed up by two other checkers behind it diagonally can't be captured
-
-- Like Chess, sometimes you need to sacrifice a checker for the greater good of the game. Don't be afraid to sacrifice a piece or two if it sets your opponent up for a more devastating loss
-
-- Overall, you need to pay close attention to win at Checkers. Watch for any multi-jumps, pay close attention to your player's kings, and never leave yourself open to captures unless it will result in your opponent losing at least one piece down the road
+- ### Simply the First one to make it to other side of board and gets kinged wins.  
 
 ### Thank You
 #### Open link in new tab
