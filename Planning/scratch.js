@@ -99,7 +99,7 @@ function makeBoard() {
 
 // Call the function to create the board
 makeBoard();
- */
+ *//* 
 
 // Log a message to the console
 console.log("javascript is a go");
@@ -146,4 +146,4 @@ function init() {
 function checkCell(e) {
   // Log the dataset attributes (data-x and data-y) of the clicked cell
   console.log(e.target.dataset);
-}
+} */
