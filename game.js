@@ -1,4 +1,4 @@
-console.log("javascript is up");
+co/* nsole.log("javascript is up");
 
 // 1. Constants
 const gridContainer = document.querySelector('#grid-container');
@@ -290,4 +290,4 @@ newGameButton.addEventListener('click', resetGame);
 
 // 5. Initial Setup
 initializeBoard();
-createBoard();
+createBoard(); */
