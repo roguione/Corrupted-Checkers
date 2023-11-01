@@ -1,4 +1,4 @@
-# Checkers BBG
+# Corrupted Checkers BBG
 
 ## About
 Checkers is one of the oldest games we know. The earliest board found dates back to 3,000 BCE, making it around 5,000 years old! The fact that people still play checkers is a testament to just how addictive, enjoyable, and easy the game is to learn and play. In this game of checkers the rules are same. I have only changed the styling around.  
@@ -6,7 +6,6 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 ## Rules/Instructions  
 
 - Deciding who goes first can vary from version to version. Unlike Chess, white doesn't have to go first -- it can be whoever you want. In our version of Checkers, you'll always go first when playing against the computer.
-    - However, Black will typically go first in other versions of Checkers.
 
 ### Simply beat the other opponent by capturing all their pieces.
 
