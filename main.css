@@ -26,8 +26,6 @@ h1 {
 
 /* Define the grid container */
 #grid-container {
-  position: relative;
-  transform-origin: top-left;
   width: 550px; /* Adjust the size */
   height: 550px; /* Adjust the size */
   display: grid;
