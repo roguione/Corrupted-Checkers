@@ -14,20 +14,14 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 -  To set the game up, Each player places their checkers on the black squares in the first three rows in   front of them
   
 -  Checkers can only move diagonally, and they can only move forward. You can move one checker per turn. To capture the opposing player's piece, you have to jump over the said piece with one of your checkers
-  
-- It doesn't matter if you're the white or black player, the pieces always go on the black squares
-  
-- - Capture opponents pieces by jumping them
+
+- Capture opponents pieces by jumping them
   
 - Pieces can move forward or diagonally unless Kinged
   - If one of your pieces makes it to the other side of the board that piece becomes a king
 
 - The king can move forward and backward diagonally on the board. This is a huge advantage, and players should try as hard as they can to crown their pieces
   
-- While you can only move one checker per turn, you can capture multiple checkers per turn. Say you jump one enemy piece, and the square you land in is forward-diagonally adjacent to another enemy piece. You can go on to jump that checker as well, and continue to do so with any other forward-diagonally adjacent checkers. When a player jumps over two pieces in one move, it is known as double-jumping
-
-- When multi-jumping, your checker can capture pieces forward and backward freely even if it's not a king. However, if your checker lands on the opponent's side momentarily while multi-jumping, it does not become a king. Your piece must land on the opponent's first row and stay there for the turn to become a king. This is often a rule that people don't know when learning how to play Checkers
-
 ## How To Win Checkers
 
 - One of the most popular strategies is controlling the center. Your pieces are safer at the edges of the board since they can't be captured there, but this also lowers your chances of making a capture
