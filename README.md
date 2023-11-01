@@ -22,7 +22,8 @@ Checkers is one of the oldest games we know. The earliest board found dates back
   
 ## How To Win Corrupted Checkers BBG
 
-- ### Simply the First one to make it to other side of board and gets kinged wins.  
+- ### Simply be the First one to make it to other side of board and get kinged wins
+- ### OG OOOG can be tricky and will take your checkers, blocking is best best strategy   
 
 ### Thank You
 #### Open link in new tab
