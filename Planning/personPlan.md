@@ -1,46 +1,31 @@
-## Create the game board: 
-### Represent the game board using a 2D array 
-      - Use a table to represent the game board
-        - Rows and columns for the squares 
-          - Each square should have:
-            - ID
-            - Data attribute 
+## Constants:
+- #### Get DOM elements for the game board, buttons, and message display.
   
-### Create a CSS file to style:
-    - Checkers board
-    - Pieces
-    - Additional elements	
-
-### Render the game board: 
-    - Use JavaScript to dynamically generate the game board 
-
-### Implement game rules Game Logic: 
-    - Define the rules for:
-    - Checkers 
-        - Piece movement
-        - Capturing opponent pieces
-        - King promotion
-
-    - Initialize the game board
+## Variables:
+- #### Define primary game state variables.
   
-    - Set up the initial placement of checkers pieces
+## Board Functions:
+- #### InitializeBoard(): Sets up the initial 8x8 game grid, assigning player pieces
+- #### createBoard(): Visually creates the game board on the webpage
+- #### createCell(): Creates an individual cell for the game board
+- #### createChecker(): Generates a checker piece for a specified player
+- #### heckerClick(): Logic for when a checker piece is clicked on
+- #### cellClick(): Logic for when a cell on the board is clicked
+- #### computerPlay(): A basic AI function for the computer to randomly select a valid move
+- #### getValidMoves(): Determine the valid moves a checker piece can make from a given position
+- #### moveChecker(): Execute the movement of a checker piece on the game board
+- #### declareWinner(): Announce the winner of the game
+- #### switchPlayer(): Toggle the turn to the other player
+- #### resetGame(): Reset the game to its initial configuration
+- #### updateBoard(): Refresh the visual representation of the game board
+  
+## Utility Functions:
+- #### isValidMove(): Check if a move from a starting position to an ending position is valid.
+- #### getCheckerPosition(): Get the position of a checker piece.
+- #### getCellPosition(): Get the position of a cell on the board.
+  
+## Event Listeners:
+- #### Event listeners are set up to handle game controls, such as starting the game and resetting it for a new game
 
-    - Update the visual representation of the board in response to game actions
-
-### Handle player turns: 
-    - Implement logic to switch between player turns
-
-### Check for win/loss conditions: 
-    - Determine when the game is won or lost
-    - Display appropriate messages
-
-### Handle player input: 
-    - Set up event listeners
-      - Clicking on pieces
-      - Valid move locations
-
-### Update the DOM:
-
-### Test & Iterate:
-
-### Implement the Computer Opponent (AI):
+## Initialization:
+- #### When the page loads, the game board is initialized
