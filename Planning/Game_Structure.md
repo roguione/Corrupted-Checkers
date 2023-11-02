@@ -1,9 +1,9 @@
 # Basic Checker Game Structure & Logic
 
 ## Constants:
-    - `const gridContainer
-    - `const scoreBoxPlayer1 
-    - `const scoreBoxComputer
+- `const gridContainer
+- `const scoreBoxPlayer1 
+- `const scoreBoxComputer
     
 #### DOM Elements:
 - `const board = document.getElementById('board')`: The main game board
