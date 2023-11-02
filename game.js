@@ -5,8 +5,8 @@ const gridContainer = document.querySelector('#grid-container');
 const startButton = document.querySelector('#start-button');
 const messageDisplay = document.querySelector('#message');
 const newGameButton = document.querySelector('#new-game-button');
-const scoreBoxPlayer1 = document.querySelector('#score-player1');
-const scoreBoxComputer = document.querySelector('#score-computer');
+const scoreBoxPlayer1 = document.querySelector('#player-one-score');
+const scoreBoxComputer = document.querySelector('#player-two-score');
 
 // 2. Variables
 let grid = [];
@@ -187,29 +187,56 @@ function getValidMoves(row, col) {
     return validMoves;
 }
 
-// Validates whether a move is valid or not
+/**
+ * Checks whether a move from one position to another is valid.
+ * @param {number} fromRow - Starting row of the checker
+ * @param {number} fromCol - Starting column of the checker
+ * @param {number} toRow - Target row for the checker
+ * @param {number} toCol - Target column for the checker
+ * @returns {boolean} - True if the move is valid, false otherwise
+ */
 function isValidMove(fromRow, fromCol, toRow, toCol) {
     console.log(`Checking validity of move from (${fromRow}, ${fromCol}) to (${toRow}, ${toCol})`);
 
+    // Determine the direction based on the player's turn
     const direction = playerTurn === 1 ? -1 : 1;
+    // Get the opposing player number
     const oppositePlayer = playerTurn === 1 ? 2 : 1;
 
+    // Ensure that the movement is diagonal
     if (Math.abs(toRow - fromRow) !== Math.abs(toCol - fromCol)) {
         return false;
     }
 
+    // Check for a valid simple move (one step)
     if (toRow - fromRow === direction && Math.abs(toCol - fromCol) === 1) {
         return grid[toRow][toCol] === 0;
     }
 
+    // Check for a valid jump move (two steps)
     if (toRow - fromRow === 2 * direction && Math.abs(toCol - fromCol) === 2) {
-        const midRow = (fromRow + toRow) / 2;
-        const midCol = (fromCol + toCol) / 2;
-        return grid[midRow][midCol] === oppositePlayer && grid[toRow][toCol] === 0;
+        // Calculate the position of the checker that would be jumped over
+        const midRow = Math.floor((fromRow + toRow) / 2);
+        const midCol = Math.floor((fromCol + toCol) / 2);
+
+        // Boundary check to ensure we're not accessing out-of-bounds indices
+        if (toRow >= 0 && toRow < 8 && toCol >= 0 && toCol < 8 &&
+            midRow >= 0 && midRow < 8 && midCol >= 0 && midCol < 8) {
+            // Check if the move is over an opposing player and the destination is empty
+            return grid[midRow][midCol] === oppositePlayer && grid[toRow][toCol] === 0;
+        }
     }
-    
+
+    // Default return if none of the valid move conditions are met
     return false;
 }
+
+// Updates the displayed scores on the page
+function updateScores() {
+    scoreBoxPlayer1.textContent = "Wayfarer: " + scores[1];
+    scoreBoxComputer.textContent = "OG OOOG AI: " + scores[2];
+}
+
 
 // click Moves a checker on the board
 function moveChecker(fromRow, fromCol, toRow, toCol) {
@@ -261,16 +288,13 @@ function resetGame() {
     gameStarted = false;
     messageDisplay.textContent = '';
     gridContainer.innerHTML = '';
-    // scoreBoxPlayer1.textContent = '';
-    // scoreBoxComputer.textContent = '';
+
+    // Correct score initialization after game reset
+    scoreBoxPlayer1.textContent = "Wayfarer: " + scores[1];
+    scoreBoxComputer.textContent = "OG OOOG AI: " + scores[2];
+
     initializeBoard();
     createBoard();
-}
-
-// Updates the scores for both players
-function updateScores() {
-    scoreBoxPlayer1.textContent = scores[1];
-    scoreBoxComputer.textContent = scores[2];
 }
 
 // Extracts checker's position from its attributes
