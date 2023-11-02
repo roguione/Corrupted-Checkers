@@ -276,6 +276,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Proclaims a player as the winner
   function declareWinner(player, isKing = false) {
+    gridContainer.classList.add("kinged");
+    
     if (isKing) {
       messageDisplay.textContent = `C-BBG King! Player ${player} wins!`;
     } else if (player === 1) {
