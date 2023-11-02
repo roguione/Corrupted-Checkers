@@ -152,6 +152,7 @@ function computerPlay() {
         // If the move results in a win for OG, declare it
         if (randomMove[2] === 0 || randomMove[2] === 7) {
             declareWinner(playerTurn);
+            return;
         }
 
         // Switch turns
@@ -220,6 +221,10 @@ function moveChecker(fromRow, fromCol, toRow, toCol) {
     // If it's a jump, remove the checker that was jumped over
     if (Math.abs(toRow - fromRow) === 2 && Math.abs(toCol - fromCol) === 2) {
         grid[(fromRow + toRow) / 2][(fromCol + toCol) / 2] = 0;
+
+        // Update the score for player making the jump
+        scores[playerTurn]++; 
+        updateScores(); // Update the score display
     }
 
     // Clear selection styling
@@ -234,6 +239,10 @@ function moveChecker(fromRow, fromCol, toRow, toCol) {
 function declareWinner(player, isKing = false) {
     if (isKing) {
         messageDisplay.textContent = `C-BBG King! Player ${player} wins!`;
+    } else if (player === 1) {
+        messageDisplay.textContent = `Wayfarer Wins!`;
+    } else {
+        messageDisplay.textContent = `OG wins!`; // This line is for OG's win
     }
     gameStarted = false;
 }

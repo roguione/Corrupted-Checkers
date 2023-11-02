@@ -32,7 +32,7 @@ h1 {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   border: 2px solid #7dc4eb; /* Add a border to the grid container */
-  box-shadow: 0 0 40px rgb(7, 208, 234); /* Add a subtle shadow for depth */
+  box-shadow: 0 15px 40px rgb(7, 208, 234); /* Add a subtle shadow for depth */
   background-color: #070707; /* Set a background color for the grid */
   position: relative; /* Position relative for child elements */
   margin-top: 10px;
@@ -53,7 +53,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%; /* Adjust the width based on your needs */
-  background-color: #30d1e7; /* Set a background color for the score layout */
+  background-color: #14474e; /* Set a background color for the score layout */
   position: relative; /* Set positioning */
   box-shadow: 0 15px 15px rgba(7, 208, 234,);
   z-index: 10;
