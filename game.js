@@ -276,8 +276,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Proclaims a player as the winner
   function declareWinner(player, isKing = false) {
-    gridContainer.classList.add("kinged");
-    
+    gridContainer.classList.add(".kinged");
+
     if (isKing) {
       messageDisplay.textContent = `C-BBG King! Player ${player} wins!`;
     } else if (player === 1) {
@@ -295,6 +295,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Resets the game state
   function resetGame() {
+    gridContainer.classList.remove(".kinged");
+
     grid = [];
     selectedChecker = null;
     playerTurn = 1;
