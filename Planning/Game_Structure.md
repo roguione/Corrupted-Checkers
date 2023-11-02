@@ -42,9 +42,12 @@
 
 ## OG AI Logic:  "OG (Triple)OOOG AI"
 - `function OGComputerStrategy()`: The original game AI logic, I am using simpler rules/algorithms and have changed to fit the title more. "Corrupted Checkers"
-  - Example: `if (availableMoves.length > 0) { selectRandomMove(availableMoves); }`: OG AI chooses a random move from the list of available moves
-  - Example: `prioritizeCaptureMoves(availableMoves)`: OG AI might prioritize moves that capture opponent pieces and if opponent jumps OG OOOG around his other checkers
+  - `if (availableMoves.length > 0) { selectRandomMove(availableMoves); }`: OG AI chooses a random move from the list of available moves
+  - `prioritizeCaptureMoves(availableMoves)`: OG AI might prioritize moves that capture opponent pieces and
+
+    #### if opponent jumps OG OOOG around his other checkers
   - - - THE CLOSEST CHECKER WILL JUMP YOU, TAKE YOUR CHECKER, AND GIVE OOOG's CHECKER BACK - - -
+      -             hence the corruption     
 
 ## Utility Functions:
 - `function isValidMove(fromRow, fromCol, toRow, toCol)`: Check if a move from a starting position to an ending position is valid
