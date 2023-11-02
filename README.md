@@ -19,7 +19,7 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
 ## How To Win Corrupted Checkers BBG
 - beat OG OOOG AI at his own game
 
-# Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## 
+# Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## Open in a New Tab
 
 ### Thank You
 - S.Squirr3l's unINC'd
