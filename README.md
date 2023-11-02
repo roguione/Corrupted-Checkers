@@ -6,7 +6,7 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
 
 ## Rules/Instructions  
 
-- Deciding who goes first can vary from version to version. Unlike Chess, white doesn't have to go first -- it can be whoever you want. In our version of Checkers, A wandering " WAYFARER " always go first when playing against OG
+- Deciding who goes first can vary from version to version. Unlike Chess, white doesn't have to go first -- it can be whoever you want. In this version of Checkers, A wandering " WAYFARER " always go first when playing against OG
 
 ### Simply beat OG OOOG AI by getting Kinged first
 
