@@ -1,7 +1,8 @@
-# Corrupted Checkers BBG
+# Corrupted Checkers 
 
 ## About
-Checkers is one of the oldest games we know. The earliest board found dates back to 3,000 BCE, making it around 5,000 years old! The fact that people still play checkers is a testament to just how addictive, enjoyable, and easy the game is to learn and play. In this game of checkers the - - RULES " ARE NOT THE SAME " - -
+Checkers is one of the oldest games we know. The earliest board found dates back to 3,000 BCE, making it around 5,000 years old! The fact that people still play checkers is a testament to just how addictive, enjoyable, and easy the game is to learn and play. In this game of checkers the - - RULES " ARE NOT THE SAME " - - 
+Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, HTML. It is a Tron Themed checkers game with a Hood twist. The game is designed to be quick.
 
 ## Rules/Instructions  
 
@@ -21,7 +22,7 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 # Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## 
 
 ### Thank You
-- S.Squirr3l's
+- S.Squirr3l's unINC'd
 ##### ['Game Logic'](https://github.com/roguione/JS-Game-Proj/blob/main/Planning/Game_Structure.md) 
 ##### ['Themes Used'](https://github.com/roguione/JS-Game-Proj/tree/main/imgs)
 
