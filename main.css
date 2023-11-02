@@ -78,10 +78,16 @@ h1 {
   background-color: #370862; /* Set color for player 1's checkers */
 }
 
+.checker.player1:hover {
+  background-color: #1dcece;
+}
 /* Styling for checker 2 (Player 2) */
 .checker.player2 {
   background-color: #626013; /* Set color for player 2's checkers */
 }
+
+.checker.player2:hover {
+  background-color: #1dcece;
 
 /* Styling for both checker colors */
 .checker {
@@ -94,6 +100,7 @@ h1 {
   justify-content: center; /* Align the checker */
   align-items: center; /* Align the checker */
   box-shadow: 0 0 10px rgb(9, 255, 235);
+  transition: background-color 0.3s ease;
 }
 
 .kinged {
