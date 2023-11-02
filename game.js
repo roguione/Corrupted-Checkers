@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Initializes the 8x8 game grid with players' pieces and empty spots
   function initializeBoard() {
     console.log("Initializing board");
-    for (let i = 0; i < 8; i++) {
-      grid[i] = [];
-      for (let j = 0; j < 8; j++) {
+    for (let i = 0; i < 8; i++) { // loop for (rows = i) i = OG side/top of board
+      grid[i] = []; 
+      for (let j = 0; j < 8; j++) { // loop for (columns = j) j = wayfarer/bottom of board
         // Assign checkers for OG
-        if ((i + j) % 2 !== 0 && i < 3) {
+        if ((i + j) % 2 !== 0 && i < 3) { // i+j/2 = odd = OG squares  i<3=OG side of board
           grid[i][j] = 2;
         }
         // Assign checkers for Player 1
-        else if ((i + j) % 2 !== 0 && i > 4) {
+        else if ((i + j) % 2 !== 0 && i > 4) { // i > 4 = Wayfarer squares i<4=Wayfarer side of board
           grid[i][j] = 1;
         }
         // Empty spots
@@ -86,39 +86,39 @@ document.addEventListener("DOMContentLoaded", (event) => {
     return checker;
   }
 
-  // Handles the logic when a checker piece is clicked
+  // logic for when a checker piece is clicked
   function checkerClick(e) {
     console.log("Checker clicked");
     if (!gameStarted) return;
 
-    // Prevent event from propagating upwards
+    // Prevent event from propagating
     e.stopPropagation();
 
-    // Deselect any previously selected checker
+    // REmove any previously selected checker
     if (selectedChecker) {
       selectedChecker.classList.remove("selected");
     }
 
-    // Mark this checker as the selected one
+    // Mark checker as the selected one
     selectedChecker = e.target;
     selectedChecker.classList.add("selected");
   }
 
-  // Handles the logic when a cell on the board is clicked
+  // logic for when a cell on the board is clicked
   function cellClick(e) {
     console.log("Cell clicked");
-    if (!gameStarted || !selectedChecker) return;
+    if (!gameStarted || !selectedChecker) return; // if game is started & checker is selected, itll keep going, otherwise it exits
 
     const [fromRow, fromCol] = getCheckerPosition(selectedChecker);
     const [toRow, toCol] = getCellPosition(e.currentTarget);
-
+    // checks if square checker is being placed isvalidmove 
     if (isValidMove(fromRow, fromCol, toRow, toCol)) {
-      moveChecker(fromRow, fromCol, toRow, toCol);
+      moveChecker(fromRow, fromCol, toRow, toCol);// places checker if move is valid
       if (playerTurn === 1 && toRow === 0) {
         declareWinner(playerTurn, true);
         return;
       }
-      if (playerTurn === 2 && toRow === 7) {
+      if (playerTurn === 2 && toRow === 7) { // declares winner if its wayfarer turn and if he/she has checker on top row (OG's House})
         declareWinner(playerTurn, true);
         return;
       }
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       moveChecker(randomMove[0], randomMove[1], randomMove[2], randomMove[3]);
 
       // If the move results in a win for OG, declare it
-      if (randomMove[2] === 0 || randomMove[2] === 7) {
+      if (randomMove[2] === 0 || randomMove[2] === 7) { // checks if OG made it to bottom row 
         declareWinner(playerTurn);
         return;
       }
@@ -175,10 +175,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       validMoves.push([row, col, row + 2 * direction, col - 2]);
     }
 
-    // Add simple moves for the computer
+    // Simple moves for the computer
     if (playerTurn === 2) {
       if (isValidMove(row, col, row + direction, col + 1)) {
-        validMoves.push([row, col, row + direction, col + 1]);
+        validMoves.push([row, col, row + direction, col + 1]); // change this to turn up OG, if valid square is available, OG will take multi checkers off board at once
       }
       if (isValidMove(row, col, row + direction, col - 1)) {
         validMoves.push([row, col, row + direction, col - 1]);
@@ -190,39 +190,39 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   /**
    * Checks whether a move from one position to another is valid.
-   * @param {number} fromRow - Starting row of the checker
-   * @param {number} fromCol - Starting column of the checker
-   * @param {number} toRow - Target row for the checker
-   * @param {number} toCol - Target column for the checker
+   * @param {number} fromRow - Starting row of the checker = i
+   * @param {number} fromCol - Starting column of the checker = j
+   * @param {number} toRow - Target row for the checker = i
+   * @param {number} toCol - Target column for the checker = j
    * @returns {boolean} - True if the move is valid, false otherwise
    */
   function isValidMove(fromRow, fromCol, toRow, toCol) {
     console.log(
-      `Checking validity of move from (${fromRow}, ${fromCol}) to (${toRow}, ${toCol})`
+      `validity of move (${fromRow}, ${fromCol}) to (${toRow}, ${toCol})`
     );
 
     // Determine the direction based on the player's turn
-    const direction = playerTurn === 1 ? -1 : 1;
-    // Get the opposing player number
-    const oppositePlayer = playerTurn === 1 ? 2 : 1;
+    const direction = playerTurn === 1 ? -1 : 1; // -1 = direction to top of board/up player 1 movement
+    // opposing player number
+    const oppositePlayer = playerTurn === 1 ? 2 : 1; // 1 = direction to bottom/down OG movement (player 2)
 
-    // Ensure that the movement is diagonal
+    // Makes movement is diagonal like magic, idk
     if (Math.abs(toRow - fromRow) !== Math.abs(toCol - fromCol)) {
       return false;
     }
 
-    // Check for a valid simple move (one step)
+    // Check for valid simple move (one step)
     if (toRow - fromRow === direction && Math.abs(toCol - fromCol) === 1) {
       return grid[toRow][toCol] === 0;
     }
 
-    // Check for a valid jump move (two steps)
+    // Check for valid jump move (two steps)
     if (toRow - fromRow === 2 * direction && Math.abs(toCol - fromCol) === 2) {
-      // Calculate the position of the checker that would be jumped over
+      // Calculate the position of the checker that is to be jumped over
       const midRow = Math.floor((fromRow + toRow) / 2);
       const midCol = Math.floor((fromCol + toCol) / 2);
 
-      // Boundary check to ensure we're not accessing out-of-bounds indices
+      // Boundary check to ensure we're not accessing out-of-bounds indices/ very important/ OG snipes from out there
       if (
         toRow >= 0 &&
         toRow < 8 &&
