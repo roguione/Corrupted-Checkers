@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const parent = checker.parentElement;
     return getCellPosition(parent);
   }
-
+  
   // Extracts cell's position from its attributes
   function getCellPosition(cell) {
     return [
