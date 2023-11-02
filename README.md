@@ -16,6 +16,7 @@ Checkers is one of the oldest games we know. The earliest board found dates back
 - If one of your pieces makes it to the other side of the board that piece becomes a - - KING - - to WIN!!
   
 ## How To Win Corrupted Checkers BBG
+- beat OG OOOG AI at his own game
 
 # Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## 
 
