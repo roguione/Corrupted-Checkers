@@ -1,4 +1,4 @@
-# Basic Checker Game Structure
+# Basic Checker Game Structure & Logic
 
 ## Constants:
     - const gridContainer
