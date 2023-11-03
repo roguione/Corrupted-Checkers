@@ -7,7 +7,7 @@ body {
   height: 100vh;
   margin-top: 90px;
   margin-right: 120px;
-  background-image: url("imgs/tron4.png"); /* Add this line */
+  background-image: url("imgs/tron4.png"); 
   background-size: cover; /* ensures the image covers the entire viewport */
   background-repeat: no-repeat; /* ensures the image doesn't repeat */
   background-position: center; /* ensures the image is centered */
