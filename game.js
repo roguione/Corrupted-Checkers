@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       updateBoard();
     }
   }
-
+  
   // Identify valid moves a checker can make from its current position
   function getValidMoves(row, col) {
     const direction = playerTurn === 1 ? -1 : 1;
