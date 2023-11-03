@@ -20,15 +20,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Initializes the 8x8 game grid with players' pieces and empty spots
   function initializeBoard() {
     console.log("Initializing board");
-    for (let i = 0; i < 8; i++) { // loop for (rows = i) i = OG side/top of board
-      grid[i] = []; 
-      for (let j = 0; j < 8; j++) { // loop for (columns = j) j = wayfarer/bottom of board
+    for (let i = 0; i < 8; i++) {
+      // loop for (rows = i) i = OG side/top of board
+      grid[i] = [];
+      for (let j = 0; j < 8; j++) {
+        // loop for (columns = j) j = wayfarer/bottom of board
         // Assign checkers for OG
-        if ((i + j) % 2 !== 0 && i < 3) { // i+j/2 = odd = OG squares  i<3=OG side of board
+        if ((i + j) % 2 !== 0 && i < 3) {
+          // i+j/2 = odd = OG squares  i<3=OG side of board
           grid[i][j] = 2;
         }
         // Assign checkers for Player 1
-        else if ((i + j) % 2 !== 0 && i > 4) { // i > 4 = Wayfarer squares i<4=Wayfarer side of board
+        else if ((i + j) % 2 !== 0 && i > 4) {
+          // i > 4 = Wayfarer squares i<4=Wayfarer side of board
           grid[i][j] = 1;
         }
         // Empty spots
@@ -111,14 +115,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const [fromRow, fromCol] = getCheckerPosition(selectedChecker);
     const [toRow, toCol] = getCellPosition(e.currentTarget);
-    // checks if square checker is being placed isvalidmove 
+    // checks if square checker is being placed isvalidmove
     if (isValidMove(fromRow, fromCol, toRow, toCol)) {
-      moveChecker(fromRow, fromCol, toRow, toCol);// places checker if move is valid
+      moveChecker(fromRow, fromCol, toRow, toCol); // places checker if move is valid
       if (playerTurn === 1 && toRow === 0) {
         declareWinner(playerTurn, true);
         return;
       }
-      if (playerTurn === 2 && toRow === 7) { // declares winner if its wayfarer turn and if he/she has checker on top row (OG's House})
+      if (playerTurn === 2 && toRow === 7) {
+        // declares winner if its wayfarer turn and if he/she has checker on top row (OG's House})
         declareWinner(playerTurn, true);
         return;
       }
@@ -151,7 +156,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       moveChecker(randomMove[0], randomMove[1], randomMove[2], randomMove[3]);
 
       // If the move results in a win for OG, declare it
-      if (randomMove[2] === 0 || randomMove[2] === 7) { // checks if OG made it to bottom row 
+      if (randomMove[2] === 0 || randomMove[2] === 7) {
+        // checks if OG made it to bottom row
         declareWinner(playerTurn);
         return;
       }
@@ -161,7 +167,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       updateBoard();
     }
   }
-  
+
   // Identify valid moves a checker can make from its current position
   function getValidMoves(row, col) {
     const direction = playerTurn === 1 ? -1 : 1;
@@ -318,7 +324,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const parent = checker.parentElement;
     return getCellPosition(parent);
   }
-  
+
   // Extracts cell's position from its attributes
   function getCellPosition(cell) {
     return [
