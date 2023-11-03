@@ -30,7 +30,7 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
 
 - Craig Jones : Yo, yo... what's up O.G. Triple O.G... O.G. triple... triple O.G.?
 
-# Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## Open in a New Tab
+# Play Here ## ['Corrupted Checkers'](https://roguione.github.io/JS-Game-Proj/main.html) ## Open in a New Tab
 
 ### Thank You
 - S.Squirr3l's unINC'd
