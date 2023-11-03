@@ -21,6 +21,15 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
 
 ### To lengthen game play and test OG, try and let him make the winning move, its harder to loose than to win  
 
+#### For the ones who dont know who OG OOOG is or where the ref come from. 
+- Damon : Craig and Day-Day.
+
+- Day-Day : Ohh...
+
+- Damon : Just the n&^%%S I need to see.
+
+- Craig Jones : Yo, yo... what's up O.G. Triple O.G... O.G. triple... triple O.G.?
+
 # Play Here ## ['OG's HOUSE'](https://roguione.github.io/JS-Game-Proj/main.html) ## Open in a New Tab
 
 ### Thank You
