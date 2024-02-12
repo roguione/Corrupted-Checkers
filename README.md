@@ -26,7 +26,7 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
 
 - Day-Day : Ohh...
 
-- Damon : Just the n&^%%S I need to see.
+- Damon : Just the n&^%S I need to see.
 
 - Craig Jones : Yo, yo... what's up O.G. Triple O.G... O.G. triple... triple O.G.?
 
@@ -46,6 +46,3 @@ Corrupted Checker's is a Browser Based Game made using Vanilla JavaScript, CSS, 
   - ['RB'](https://github.com/RyanBranco/Checkers)
   - ['J.S(sandbox)GE'](https://codesandbox.io/s/grid-demo-msjfyh)
  
-
-
-
