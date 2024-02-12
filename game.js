@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const scoreBoxComputer = document.querySelector("#player-two-score");
 
   // 2. Variables
-  let grid = [];
   let selectedChecker = null;
   let playerTurn = 1;
   let scores = { 1: 0, 2: 0 };
