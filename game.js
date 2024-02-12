@@ -349,3 +349,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   initializeBoard();
   createBoard();
 });
+
+
